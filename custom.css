@@ -1,0 +1,171 @@
+:root {
+  /* Primary Colors */
+  --orange: hsl(25, 97%, 53%);
+
+  /* Neutral Colors */
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+
+  /* FONTS */
+  --body-font: "Overpass";
+  --p-font-size: 15px;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--very-dark-blue);
+}
+
+.rating-component {
+  width: 380px;
+  height: 380px;
+  margin: 15% auto;
+  background-color: var(--dark-blue);
+  border-radius: 24px;
+  padding: 32px;
+}
+
+.rating-component .star-icon {
+  background-color: rgba(78, 73, 73, 0.2);
+  padding: 12px;
+  border-radius: 50%;
+  margin-bottom: 32px;
+}
+
+.rating-component .text-section h2 {
+  color: var(--white);
+  font-size: 24px;
+  font-family: var(--body-font);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.rating-component .text-section p {
+  color: var(--white);
+  opacity: 0.5;
+  font-family: var(--body-font);
+  font-size: var(--p-font-size);
+  font-weight: 400;
+}
+
+.rating-component .rating-buttons-section {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.rating-component .rating-buttons-section button {
+  padding: 16px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(78, 73, 73, 0.2);
+}
+
+.rating-component .rating-buttons-section button p {
+  color: var(--white);
+  font-family: var(--body-font);
+  font-size: 16px;
+}
+
+.rating-component .submit-btn button {
+  margin-top: 30px;
+  background-color: var(--orange);
+  color: var(--white);
+  border-radius: 25px;
+  width: 320px;
+  height: 40px;
+}
+
+.rating-component .submit-btn p {
+  margin: 8px auto;
+  font-family: var(--body-font);
+  font-size: 18px;
+  padding-left: 12px;
+}
+
+.rating-component .submit-btn button:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.rating-component .rating-buttons-section button:hover {
+  background-color: var(--light-grey);
+}
+
+.rating-component .rating-buttons-section button:focus {
+  background-color: var(--orange);
+}
+
+/* THANK YOU SECTION */
+
+.rating-component .thanks-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  flex: 1;
+  margin: 20px;
+}
+
+.rating-component .thanks-section .logo {
+  width: 140px;
+  margin: auto;
+}
+
+.rating-component .thanks-section .rated {
+  color: var(--orange);
+  background-color: rgba(68, 68, 68, 0.245);
+  border-radius: 25px;
+  height: 32px;
+  font-family: var(--body-font);
+  text-align: center;
+}
+
+.rating-component .thanks-section .rated p {
+  margin-top: 8px;
+}
+
+.rating-component .thanks-section .thank {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rating-component .thanks-section .thank h2 {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--white);
+  font-family: var(--body-font);
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.rating-component .thanks-section .thank p {
+  margin-top: 12px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--white);
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.5;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: inherit;
+}
